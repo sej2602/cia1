@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal and Professional Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00264d; /* Darker shade of blue */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #FFD700; /* Golden Border */
+        }
+        header h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #FFD700; /* Golden color */
+            margin-bottom: 20px; /* Increased space between header and links */
+        }
+        nav {
+            text-align: justify;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline;
+            margin-left: 20px; /* Increased space between header and links */
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #FFD700; /* Yellow */
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+            border: 2px solid #000; /* Black outline */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        section {
+            margin: 20px;
+            display: block; /* Expanded by default */
+        }
+        h2 {
+            color: #00BFFF; /* Normal Blue */
+            font-weight: bold;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .picture {
+            float: right;
+            margin: 20px;
+            margin-top: 10px;
+        }
+        .picture img {
+            width: 320px; /* Converted from inches to pixels */
+            height: 240px; /* Converted from inches to pixels */
+            border-radius: 10px;
+        }
+        .tagline {
+            font-family: 'Comic Sans MS', cursive; /* Funky font */
+            font-size: 24px;
+            color: #000; /* Black */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Name</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#personal">Personal Details</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work">Work Experience</a></li>
+        <li><a href="#awards">Awards and Recognition</a></li>
+    </ul>
+</nav>
+
+<div class="picture">
+    <img src="your_picture.jpg" alt="Your Picture">
+    <div class="tagline">Kind over Cool</div>
+</div>
+
+<section id="personal">
+    <h2>Personal Details</h2>
+    <p><strong>Contact Details:</strong></p>
+    <p>Email: email@test.com</p>
+    <p>Ph No: 1234567</p>
+    <p><strong>A Few words about me:</strong> I am a girl in Bangalore</p>
+    <p><strong>Hobbies:</strong> Swimming, Reading</p>
+    <p><strong>Books I would re-read anyday:</strong> Harry Potter, Lord of Rings</p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <p><strong>Education:</strong></p>
+    <p>Graduated from xxx college in blah blah blah (xxxx - yyyy)</p>
+    <p>Post Graduation from yyyy college in flaw flaw flaw (2024-2026)</p>
+</section>
+
+<section id="work">
+    <h2>Work Experience</h2>
+    <p><strong>Work Experience:</strong></p>
+    <p>Worked as an intern in xyz organization from xxx to yyyy.</p>
+</section>
+
+<section id="awards">
+    <h2>Awards and Recognitions</h2>
+    <p><strong>Sports:</strong></p>
+    <p>> Won awards for inter-school basketball</p>
+    <p>> Captain of the school basketball team</p>
+    <p><strong>Arts:</strong></p>
+    <p>> Represented the college in the Annual Design Fest in DU</p>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var sections = document.querySelectorAll('section');
+        for (var i = 0; i < sections.length; i++) {
+            sections[i].style
